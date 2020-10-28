@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 namespace ScriptableEvents.Events {
-	[CreateAssetMenu(fileName = "Void Event", menuName = "Scriptable Events/Void Event")]
+	[CreateAssetMenu(fileName = "Void Event", menuName = "Scriptable Events/Primitive Types/Void Event")]
 	public class EventVoid : ScriptableObject {
 		/// <summary>
 		/// Event called when the scriptable event is triggered.
