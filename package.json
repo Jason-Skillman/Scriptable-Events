@@ -5,15 +5,13 @@
   "unity": "2019.4",
   "description": "Allows the user to quickly setup events with scriptable objects using the observer pattern.",
   "keywords": [
-    "tools"
+    "tools",
+    "scriptable objects"
   ],
   "category": "Debug Tool",
-  "dependencies": {
-    "com.unity.textmeshpro": "2.0.1"
-  },
-  "relatedPackages": {
-    "com.jasonskillman.scriptableevents.tests": "1.0.0"
-  },
+  "testables": [
+    "com.jasonskillman.scriptableevents.tests"
+  ],
   "author": {
     "name": "Jason Skillman",
     "email": "jason_skillman@outlook.com",
