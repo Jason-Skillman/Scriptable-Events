@@ -1,0 +1,27 @@
+{
+  "name": "com.jasonskillman.scriptableevents",
+  "displayName": "Scriptable Events",
+  "version": "1.0.0",
+  "unity": "2019.4",
+  "description": "Allows the user to quickly setup events with scriptable objects using the observer pattern.",
+  "keywords": [
+    "tools"
+  ],
+  "category": "Debug Tool",
+  "dependencies": {
+    "com.unity.textmeshpro": "2.0.1"
+  },
+  "relatedPackages": {
+    "com.jasonskillman.scriptableevents.tests": "1.0.0"
+  },
+  "author": {
+    "name": "Jason Skillman",
+    "email": "jason_skillman@outlook.com",
+    "url": "https://github.com/Jason-Skillman"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jason-Skillman/Scriptable-Events.git",
+    "revision": "e1ff04caa04e5589ecbad6c9bf4f0caff1889e72"
+  }
+}
