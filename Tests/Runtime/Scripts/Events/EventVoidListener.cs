@@ -14,11 +14,13 @@ public class EventVoidListener : MonoBehaviour {
 	private GameObject prefabBall;
 
 	private void OnEnable() {
-		voidEvent.OnTrigger += SpawnBall;
+		if(voidEvent != null)
+			voidEvent.OnTrigger += SpawnBall;
 	}
 
 	private void OnDisable() {
-		voidEvent.OnTrigger -= SpawnBall;
+		if(voidEvent != null)
+			voidEvent.OnTrigger -= SpawnBall;
 	}
 
 	private void SpawnBall() {
