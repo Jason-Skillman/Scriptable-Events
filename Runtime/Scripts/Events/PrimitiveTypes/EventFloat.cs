@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 
 namespace ScriptableEvents.Events {
-	[CreateAssetMenu(fileName = "Float Event", menuName = "Scriptable Events/Primitive Types/Float Event")]
+	[CreateAssetMenu(fileName = "Float Event", menuName = "Scriptable Events/Primitive Types/Float Event", order = 3)]
 	public class EventFloat : ScriptableObject {
 		/// <summary>
 		/// Event called when the scriptable event is triggered.

@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 
 namespace ScriptableEvents.Events {
-	[CreateAssetMenu(fileName = "String Array Event", menuName = "Scriptable Events/Primitive Array Types/String Array Event")]
+	[CreateAssetMenu(fileName = "String Array Event", menuName = "Scriptable Events/Primitive Array Types/String Array Event", order = 4)]
 	public class EventStringArray : ScriptableObject {
 		/// <summary>
 		/// Event called when the scriptable event is triggered.

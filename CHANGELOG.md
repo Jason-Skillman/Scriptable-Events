@@ -1,5 +1,8 @@
 # Code Editor Package for Scriptable Events
 
+## [1.1.1] - 10/29/2020
+- Rearrange scriptable object menu order
+
 ## [1.1.0] - 10/29/2020
 - Added primitive array event types
 
