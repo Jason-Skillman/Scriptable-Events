@@ -77,8 +77,3 @@ Create a new script which extends `ScriptableObject` and follow a near similar f
 |---|---|
 |`UnityAction<int>` `OnTrigger`|Event called when the scriptable event is triggered.|
 |`Trigger()`|Main method to call to trigger the event.|
-
-## Insperation
-Original idea and source code can be found here: https://github.com/UnityTechnologies/open-project-1
-
-This is my custom modified implementation of using scripatable objects with the observer pattern.
