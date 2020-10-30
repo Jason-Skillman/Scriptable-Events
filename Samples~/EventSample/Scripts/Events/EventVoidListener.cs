@@ -7,7 +7,7 @@ using UnityEngine;
 public class EventVoidListener : MonoBehaviour {
 	
 	[SerializeField]
-	private EventVoid voidEvent;
+	private VoidEvent voidEvent;
 
 	[Header("References")]
 	[SerializeField]

@@ -2,16 +2,16 @@
 using UnityEngine.Events;
 
 namespace ScriptableEvents.Events {
-	[CreateAssetMenu(fileName = "Int Event", menuName = "Scriptable Events/Primitive Types/Int Event", order = 2)]
-	public class EventInt : ScriptableObject {
+	[CreateAssetMenu(fileName = "Void Event", menuName = "Scriptable Events/Primitive Types/Void Event", order = 1)]
+	public class VoidEvent : ScriptableObject {
 		/// <summary>
 		/// Event called when the scriptable event is triggered.
 		/// </summary>
-		public event UnityAction<int> OnTrigger;
+		public event UnityAction OnTrigger;
 		
 		/// <summary>
 		/// Main method to call to trigger the event.
 		/// </summary>
-		public void Trigger(int value) => OnTrigger?.Invoke(value);
+		public void Trigger() => OnTrigger?.Invoke();
 	}
 }

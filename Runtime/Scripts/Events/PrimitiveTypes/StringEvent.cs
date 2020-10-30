@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "String Event", menuName = "Scriptable Events/Primitive Types/String Event", order = 5)]
-	public class EventString : ScriptableObject {
+	public class StringEvent : ScriptableObject {
 		/// <summary>
 		/// Event called when the scriptable event is triggered.
 		/// </summary>

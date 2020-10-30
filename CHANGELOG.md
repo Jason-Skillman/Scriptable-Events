@@ -1,5 +1,8 @@
 # Code Editor Package for Scriptable Events
 
+## [1.1.3] - 10/30/2020
+- Refactored event class names.
+
 ## [1.1.2] - 10/29/2020
 - Converted example scene into a unity sample package.
 - Removed tests.

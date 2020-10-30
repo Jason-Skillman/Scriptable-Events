@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "Int Array Event", menuName = "Scriptable Events/Primitive Array Types/Int Array Event", order = 1)]
-	public class EventIntArray : ScriptableObject {
+	public class IntArrayEvent : ScriptableObject {
 		/// <summary>
 		/// Event called when the scriptable event is triggered.
 		/// </summary>
