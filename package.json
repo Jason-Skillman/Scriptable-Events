@@ -14,11 +14,6 @@
     "email": "jason_skillman@outlook.com",
     "url": "https://github.com/Jason-Skillman"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Jason-Skillman/Scriptable-Events.git",
-    "revision": "31db0f8588cd1602957caa965e12cc959d6bdb97"
-  },
   "samples": [
     {
       "displayName": "Event Sample",
