@@ -1,9 +1,10 @@
 # Scriptable-Events
-My own custom implementation to setup events with scriptable objects using the observer pattern.
+Quickly setup static events with scriptable objects using the observer pattern. Custom events can also be created.
 
 ## How to install
+This package can be installed through the Unity `Package Manager`
 
-Open up the Unity package manager and click on `Add package from git URL...`.
+Open up the package manager `Window/Package Manager` and click on `Add package from git URL...`.
 
 ![unity_package_manager_git_drop_down](https://i.imgur.com/wRDQU8Z.png)
 
