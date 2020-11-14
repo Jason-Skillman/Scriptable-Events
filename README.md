@@ -78,3 +78,25 @@ Create a new script which extends `ScriptableObject` and follow a near similar f
 |---|---|
 |`UnityAction<int>` `OnTrigger`|Event called when the scriptable event is triggered.|
 |`Trigger()`|Main method to call to trigger the event.|
+
+## Supported event types
+
+### Primitive events
+- void
+- int
+- float
+- double
+- long
+- bool
+- string
+
+### Primitive array events
+- int
+- float
+- double
+- long
+- bool
+- string
+
+### Unity events
+- GameObject
