@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 
 namespace ScriptableEvents.Events {
-	[CreateAssetMenu(fileName = "Bool Event", menuName = "Scriptable Events/Primitive Types/Bool Event", order = 14)]
+	[CreateAssetMenu(fileName = "Bool Event", menuName = "Scriptable Events/Primitive Types/Bool Event", order = 16)]
 	public class BoolEvent : ScriptableObject {
 		/// <summary>
 		/// Event called when the scriptable event is triggered.
