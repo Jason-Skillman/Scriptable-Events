@@ -1,0 +1,15 @@
+{
+    "name": "JasonSkillman.ScriptableEvents.Editor",
+    "references": [
+        "GUID:43736824611839a4f9039849abd0963d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
