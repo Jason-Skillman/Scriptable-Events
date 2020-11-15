@@ -1,4 +1,8 @@
-# Code Editor Package for Scriptable Events
+# Scriptable Events Changelog
+
+## [1.1.4] - 11/14/2020
+- Added double and long events.
+- Re-ordered arrays in context menu.
 
 ## [1.1.3] - 10/30/2020
 - Refactored event class names.
