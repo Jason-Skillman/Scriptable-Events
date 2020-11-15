@@ -1,5 +1,8 @@
 # Scriptable Events Changelog
 
+## [1.1.5] - 11/15/2020
+- Added Unity scene event.
+
 ## [1.1.4] - 11/14/2020
 - Added double and long events.
 - Re-ordered arrays in context menu.

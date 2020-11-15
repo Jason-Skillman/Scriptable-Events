@@ -100,3 +100,4 @@ Create a new script which extends `ScriptableObject` and follow a near similar f
 
 ### Unity events
 - GameObject
+- Scene
