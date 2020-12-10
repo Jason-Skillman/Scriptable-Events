@@ -1,5 +1,8 @@
 # Scriptable Events Changelog
 
+## [1.1.6] - 12/10/2020
+- Fixed editor assembly.
+
 ## [1.1.5] - 11/15/2020
 - Added Unity scene event.
 
