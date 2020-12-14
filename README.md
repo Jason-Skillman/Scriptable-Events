@@ -6,13 +6,13 @@ This package can be installed through the Unity `Package Manager`
 
 Open up the package manager `Window/Package Manager` and click on `Add package from git URL...`.
 
-![unity_package_manager_git_drop_down](https://i.imgur.com/wRDQU8Z.png)
+![unity_package_manager_git_drop_down](Documentation~/images/unity_package_manager_git_drop_down.png))
 
 Paste in this repository's url.
 
 `https://github.com/Jason-Skillman/Scriptable-Events.git`
 
-![unity_package_manager_git_with_url](https://i.imgur.com/sNQYA13.png)
+![unity_package_manager_git_with_url](Documentation~/images/unity_package_manager_git_with_url.png))
 
 Click `Add` and the package will be installed in your project.
 
@@ -48,7 +48,7 @@ Drag the scriptable object event into the `EventVoid` variable in the inspector 
 private EventVoid voidEvent;
 ```
 
-![scriptable_object_subscribing_event_inspector](https://i.imgur.com/wGfJZdb.png)
+![subscribing_event_inspector](Documentation~/images/subscribing_event_inspector.png))
 
 ### Triggering an event
 To trigger an existing event call the `Trigger()` method from the scriptable object. Every subscribed listener will get the fired event.
