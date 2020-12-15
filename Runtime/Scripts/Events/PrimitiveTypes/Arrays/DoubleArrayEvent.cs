@@ -5,13 +5,13 @@ namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "Double Array Event", menuName = "Scriptable Events/Primitive Types/Arrays/Double Array Event", order = 3)]
 	public class DoubleArrayEvent : ScriptableObject {
 		/// <summary>
-		/// Event called when the scriptable event is triggered.
+		/// Event called when the scriptable event is invoked.
 		/// </summary>
-		public event UnityAction<double[]> OnTrigger;
+		public event UnityAction<double[]> OnInvoked;
 		
 		/// <summary>
-		/// Main method to call to trigger the event.
+		/// Invokes the event.
 		/// </summary>
-		public void Trigger(double[] value) => OnTrigger?.Invoke(value);
+		public void Invoke(double[] value) => OnInvoked?.Invoke(value);
 	}
 }

@@ -5,13 +5,13 @@ namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "String Event", menuName = "Scriptable Events/Primitive Types/String Event", order = 17)]
 	public class StringEvent : ScriptableObject {
 		/// <summary>
-		/// Event called when the scriptable event is triggered.
+		/// Event called when the scriptable event is invoked.
 		/// </summary>
-		public event UnityAction<string> OnTrigger;
+		public event UnityAction<string> OnInvoked;
 		
 		/// <summary>
-		/// Main method to call to trigger the event.
+		/// Invokes the event.
 		/// </summary>
-		public void Trigger(string value) => OnTrigger?.Invoke(value);
+		public void Invoke(string value) => OnInvoked?.Invoke(value);
 	}
 }

@@ -5,13 +5,13 @@ namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "Bool Event", menuName = "Scriptable Events/Primitive Types/Bool Event", order = 16)]
 	public class BoolEvent : ScriptableObject {
 		/// <summary>
-		/// Event called when the scriptable event is triggered.
+		/// Event called when the scriptable event is invoked.
 		/// </summary>
-		public event UnityAction<bool> OnTrigger;
+		public event UnityAction<bool> OnInvoked;
 		
 		/// <summary>
-		/// Main method to call to trigger the event.
+		/// Invokes the event.
 		/// </summary>
-		public void Trigger(bool value) => OnTrigger?.Invoke(value);
+		public void Invoke(bool value) => OnInvoked?.Invoke(value);
 	}
 }

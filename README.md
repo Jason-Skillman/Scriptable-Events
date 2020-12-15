@@ -20,7 +20,7 @@ Click `Add` and the package will be installed in your project.
 You can create an event by going to `Create/Scriptable Events/<Event Type>` in the `Project` window. Each event is a scriptable prefab. Multible events can be created for your project and different event types exist. Some of the primitive event types include void, int, float, string and bool.
 
 ### Subscribing to an event
-To subscribe to an event you can attach a method to the `OnTrigger` event in the scriptable object.
+To subscribe to an event you can attach a method to the `OnInvoked` event in the scriptable object.
 
 This is an example of a monobehavior script subscriping to `EventVoid`. Note: Dont forget to unsubscribe from the event when you no longer need to.
 
@@ -29,11 +29,11 @@ This is an example of a monobehavior script subscriping to `EventVoid`. Note: Do
 private EventVoid voidEvent;
 
 private void OnEnable() {
-	voidEvent.OnTrigger += SpawnBall;
+	voidEvent.OnInvoked += SpawnBall;
 }
 
 private void OnDisable() {
-	voidEvent.OnTrigger -= SpawnBall;
+	voidEvent.OnInvoked -= SpawnBall;
 }
 
 private void SpawnBall() {
@@ -50,10 +50,10 @@ private EventVoid voidEvent;
 
 ![subscribing_event_inspector](Documentation~/images/subscribing_event_inspector.png))
 
-### Triggering an event
-To trigger an existing event call the `Trigger()` method from the scriptable object. Every subscribed listener will get the fired event.
+### Invoking an event
+To trigger an existing event call the `Invoke()` method from the scriptable object. Every subscribed listener will get the fired event.
 
-This is an example of a monobehavior who will trigger the `EventVoid` by calling `Trigger()` when the player enters it's trigger box.
+This is an example of a monobehavior who will trigger the `EventVoid` by calling `Invoke()` when the player enters it's trigger box.
 
 ```C#
 [SerializeField]
@@ -62,7 +62,7 @@ private EventVoid voidEvent;
 private void OnTriggerEnter(Collider other) {
     if(!other.CompareTag("Player")) return;
 
-    voidEvent.Trigger();
+    voidEvent.Invoke();
 }
 ```
 
@@ -76,8 +76,8 @@ Create a new script which extends `ScriptableObject` and follow a near similar f
 ### EventInt class example
 |Property/Method|Description|
 |---|---|
-|`UnityAction<int>` `OnTrigger`|Event called when the scriptable event is triggered.|
-|`Trigger()`|Main method to call to trigger the event.|
+|`UnityAction<int>` `OnInvoked`|Event called when the scriptable event is invoked.|
+|`Invoke()`|Invokes the event.|
 
 ## Supported event types
 

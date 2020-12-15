@@ -5,13 +5,13 @@ namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "Void Event", menuName = "Scriptable Events/Primitive Types/Void Event", order = 11)]
 	public class VoidEvent : ScriptableObject {
 		/// <summary>
-		/// Event called when the scriptable event is triggered.
+		/// Event called when the scriptable event is invoked.
 		/// </summary>
-		public event UnityAction OnTrigger;
+		public event UnityAction OnInvoked;
 		
 		/// <summary>
-		/// Main method to call to trigger the event.
+		/// Invokes the event.
 		/// </summary>
-		public void Trigger() => OnTrigger?.Invoke();
+		public void Invoke() => OnInvoked?.Invoke();
 	}
 }

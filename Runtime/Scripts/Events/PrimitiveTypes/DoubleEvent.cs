@@ -5,13 +5,13 @@ namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "Double Event", menuName = "Scriptable Events/Primitive Types/Double Event", order = 14)]
 	public class DoubleEvent : ScriptableObject {
 		/// <summary>
-		/// Event called when the scriptable event is triggered.
+		/// Event called when the scriptable event is invoked.
 		/// </summary>
-		public event UnityAction<double> OnTrigger;
+		public event UnityAction<double> OnInvoked;
 		
 		/// <summary>
-		/// Main method to call to trigger the event.
+		/// Invokes the event.
 		/// </summary>
-		public void Trigger(double value) => OnTrigger?.Invoke(value);
+		public void Invoke(double value) => OnInvoked?.Invoke(value);
 	}
 }

@@ -15,12 +15,12 @@ public class EventVoidListener : MonoBehaviour {
 
 	private void OnEnable() {
 		if(voidEvent != null)
-			voidEvent.OnTrigger += SpawnBall;
+			voidEvent.OnInvoked += SpawnBall;
 	}
 
 	private void OnDisable() {
 		if(voidEvent != null)
-			voidEvent.OnTrigger -= SpawnBall;
+			voidEvent.OnInvoked -= SpawnBall;
 	}
 
 	private void SpawnBall() {

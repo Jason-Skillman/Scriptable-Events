@@ -5,13 +5,13 @@ namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "Long Event", menuName = "Scriptable Events/Primitive Types/Long Event", order = 15)]
 	public class LongEvent : ScriptableObject {
 		/// <summary>
-		/// Event called when the scriptable event is triggered.
+		/// Event called when the scriptable event is invoked.
 		/// </summary>
-		public event UnityAction<long> OnTrigger;
+		public event UnityAction<long> OnInvoked;
 		
 		/// <summary>
-		/// Main method to call to trigger the event.
+		/// Invokes the event.
 		/// </summary>
-		public void Trigger(long value) => OnTrigger?.Invoke(value);
+		public void Invoke(long value) => OnInvoked?.Invoke(value);
 	}
 }

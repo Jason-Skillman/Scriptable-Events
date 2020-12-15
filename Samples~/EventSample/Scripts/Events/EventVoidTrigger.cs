@@ -13,7 +13,7 @@ public class EventVoidTrigger : MonoBehaviour {
 		if(!other.CompareTag("Player")) return;
 		
 		if(voidEvent != null)
-			voidEvent.Trigger();
+			voidEvent.Invoke();
 	}
 
 }

@@ -1,5 +1,9 @@
 # Scriptable Events Changelog
 
+## [1.2.0] - 12/15/2020
+- Updated compatibility version.
+- Changed event signatures.
+
 ## [1.1.6] - 12/10/2020
 - Fixed editor assembly.
 

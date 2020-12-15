@@ -5,13 +5,13 @@ namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "GameObject Event", menuName = "Scriptable Events/Unity/GameObject Event", order = 1)]
 	public class GameObjectEvent : ScriptableObject {
 		/// <summary>
-		/// Event called when the scriptable event is triggered.
+		/// Event called when the scriptable event is invoked.
 		/// </summary>
-		public event UnityAction<GameObject> OnTrigger;
+		public event UnityAction<GameObject> OnInvoked;
 		
 		/// <summary>
-		/// Main method to call to trigger the event.
+		/// Invokes the event.
 		/// </summary>
-		public void Trigger(GameObject value) => OnTrigger?.Invoke(value);
+		public void Invoke(GameObject value) => OnInvoked?.Invoke(value);
 	}
 }

@@ -5,13 +5,13 @@ namespace ScriptableEvents.Events {
 	[CreateAssetMenu(fileName = "Float Event", menuName = "Scriptable Events/Primitive Types/Float Event", order = 13)]
 	public class FloatEvent : ScriptableObject {
 		/// <summary>
-		/// Event called when the scriptable event is triggered.
+		/// Event called when the scriptable event is invoked.
 		/// </summary>
-		public event UnityAction<float> OnTrigger;
+		public event UnityAction<float> OnInvoked;
 		
 		/// <summary>
-		/// Main method to call to trigger the event.
+		/// Invokes the event.
 		/// </summary>
-		public void Trigger(float value) => OnTrigger?.Invoke(value);
+		public void Invoke(float value) => OnInvoked?.Invoke(value);
 	}
 }
