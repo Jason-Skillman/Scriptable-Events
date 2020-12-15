@@ -7,7 +7,7 @@ using UnityEngine;
 public class EventVoidTrigger : MonoBehaviour {
 
 	[SerializeField]
-	private VoidEvent voidEvent;
+	private VoidEvent voidEvent = default;
 
 	private void OnTriggerEnter(Collider other) {
 		if(!other.CompareTag("Player")) return;

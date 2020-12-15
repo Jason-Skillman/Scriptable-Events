@@ -7,11 +7,11 @@ using UnityEngine;
 public class EventVoidListener : MonoBehaviour {
 	
 	[SerializeField]
-	private VoidEvent voidEvent;
+	private VoidEvent voidEvent = default;
 
 	[Header("References")]
 	[SerializeField]
-	private GameObject prefabBall;
+	private GameObject prefabBall = default;
 
 	private void OnEnable() {
 		if(voidEvent != null)
