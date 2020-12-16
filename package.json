@@ -2,7 +2,6 @@
   "name": "com.jasonskillman.scriptableevents",
   "displayName": "Scriptable Events",
   "version": "1.2.0",
-  "unity": "2019.1",
   "description": "Allows the user to quickly setup events with scriptable objects using the observer pattern.",
   "keywords": [
 	"scriptable objects",
