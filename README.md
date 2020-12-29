@@ -75,6 +75,10 @@ private void OnTriggerEnter(Collider other) {
 }
 ```
 
+### Event diagram
+
+![scriptable_events_diagram](Documentation~/images/scriptable_events_diagram.png))
+
 ## Creating custom events
 If the existing primitive event types are not enough, custom event types can be written. Using the `UnityAction<>` delegate you specify different arguments and data.
 
@@ -110,3 +114,10 @@ Create a new script which extends `ScriptableObject` and follow a near similar f
 ### Unity events
 - GameObject
 - Scene
+
+## Origin
+Original idea was inspired by Unity's `open-project-1` scriptable event system.
+
+Check out the full project here.
+
+https://github.com/UnityTechnologies/open-project-1
