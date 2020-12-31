@@ -1,5 +1,8 @@
 # Scriptable Events Changelog
 
+## [1.2.1] - 12/31/2020
+- Added invoke editor button to primitive event types.
+
 ## [1.2.0] - 12/15/2020
 - Updated compatibility version.
 - Changed event signatures.
