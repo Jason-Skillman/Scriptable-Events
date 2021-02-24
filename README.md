@@ -6,26 +6,26 @@ This package can be installed through the Unity `Package Manager` with Unity ver
 
 Open up the package manager `Window/Package Manager` and click on `Add package from git URL...`.
 
-![unity_package_manager_git_drop_down](Documentation~/images/unity_package_manager_git_drop_down.png))
+![unity_package_manager_git_drop_down](Documentation~/images/unity_package_manager_git_drop_down.png)
 
 Paste in this repository's url.
 
 `https://github.com/Jason-Skillman/Scriptable-Events.git`
 
-![unity_package_manager_git_with_url](Documentation~/images/unity_package_manager_git_with_url.png))
+![unity_package_manager_git_with_url](Documentation~/images/unity_package_manager_git_with_url.png)
 
 Click `Add` and the package will be installed in your project.
 
 ---
-**NOTE:** Unity 2019.2 or lower
+**NOTE:** For Unity version 2019.2 or lower
 
-Other ways to install the package
-1. To install the package in an earler version of Unity you can clone this git into your project's `Packages` folder.
-1. Another alternative would be to download the package and in the `Package Manager` click on `Add package from disk...` and select the package's root folder.
+If you are using Unity 2019.2 or lower than you will not be able to install the package with the above method. Here are a few other ways to install the package.
+1. You can clone this git repository into your project's `Packages` folder.
+1. Another alternative would be to download this package from GitHub as a zip file. Unzip and in the `Package Manager` click on `Add package from disk...` and select the package's root folder.
 
 ---
 
-## How to use
+## How to setup
 You can create an event by going to `Create/Scriptable Events/<Event Type>` in the `Project` window. Each event is a scriptable prefab. Multible events can be created for your project and different event types exist. Some of the primitive event types include void, int, float, string and bool.
 
 ### Subscribing to an event
@@ -57,7 +57,7 @@ Drag the scriptable object event into the `EventVoid` variable in the inspector 
 private EventVoid voidEvent;
 ```
 
-![subscribing_event_inspector](Documentation~/images/subscribing_event_inspector.png))
+![subscribing_event_inspector](Documentation~/images/subscribing_event_inspector.png)
 
 ### Invoking an event
 To trigger an existing event call the `Invoke()` method from the scriptable object. Every subscribed listener will get the fired event.
@@ -77,7 +77,7 @@ private void OnTriggerEnter(Collider other) {
 
 ### Event diagram
 
-![scriptable_events_diagram](Documentation~/images/scriptable_events_diagram.png))
+![scriptable_events_diagram](Documentation~/images/scriptable_events_diagram.png)
 
 ## Creating custom events
 If the existing primitive event types are not enough, custom event types can be written. Using the `UnityAction<>` delegate you specify different arguments and data.
