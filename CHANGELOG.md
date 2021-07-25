@@ -1,5 +1,8 @@
 # Scriptable Events Changelog
 
+## [1.2.2] - 07/24/2021
+- Updated assembly definition names.
+
 ## [1.2.1] - 12/31/2020
 - Added invoke editor button to primitive event types.
 
