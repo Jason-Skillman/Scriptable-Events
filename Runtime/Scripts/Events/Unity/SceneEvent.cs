@@ -18,14 +18,8 @@
 		/// </summary>
 		public event UnityAction<string> OnUnloadScene;
 
-		/// <summary>
-		/// Main method to call to load the scene.
-		/// </summary>
 		public void LoadScene(LoadSceneMode mode = LoadSceneMode.Additive) => OnLoadScene?.Invoke(sceneName, mode);
 
-		/// <summary>
-		/// Main method to call to unload the scene.
-		/// </summary>
 		public void UnloadScene() => OnUnloadScene?.Invoke(sceneName);
 	}
 }

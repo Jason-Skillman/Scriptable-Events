@@ -9,9 +9,6 @@
 		/// </summary>
 		public event UnityAction<bool[]> OnInvoked;
 
-		/// <summary>
-		/// Invokes the event.
-		/// </summary>
 		public void Invoke(bool[] value) => OnInvoked?.Invoke(value);
 	}
 }

@@ -9,9 +9,6 @@
 		/// </summary>
 		public event UnityAction<string[]> OnInvoked;
 
-		/// <summary>
-		/// Invokes the event.
-		/// </summary>
 		public void Invoke(string[] value) => OnInvoked?.Invoke(value);
 	}
 }

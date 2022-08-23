@@ -9,9 +9,6 @@
 		/// </summary>
 		public event UnityAction<float> OnInvoked;
 
-		/// <summary>
-		/// Invokes the event.
-		/// </summary>
 		public void Invoke(float value) => OnInvoked?.Invoke(value);
 	}
 }

@@ -9,9 +9,6 @@
 		/// </summary>
 		public event UnityAction<double[]> OnInvoked;
 
-		/// <summary>
-		/// Invokes the event.
-		/// </summary>
 		public void Invoke(double[] value) => OnInvoked?.Invoke(value);
 	}
 }
