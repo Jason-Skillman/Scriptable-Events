@@ -1,5 +1,6 @@
 {
     "name": "JasonSkillman.ScriptableEvents",
+    "rootNamespace": "JasonSkillman.ScriptableEvents",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

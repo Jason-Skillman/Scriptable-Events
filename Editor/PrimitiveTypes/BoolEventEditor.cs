@@ -1,8 +1,7 @@
-﻿using ScriptableEvents.Events;
-using UnityEditor;
-using UnityEngine;
-
-namespace ScriptableEvents.EditorEvents {
+﻿namespace JasonSkillman.ScriptableEvents.Editor {
+	using UnityEditor;
+	using UnityEngine;
+	
 	[CustomEditor(typeof(BoolEvent), true)]
 	public class BoolEventEditor : Editor {
 		
