@@ -1,5 +1,6 @@
 {
     "name": "JasonSkillman.ScriptableEvents.Editor",
+    "rootNamespace": "JasonSkillman.ScriptableEvents.Editor",
     "references": [
         "GUID:43736824611839a4f9039849abd0963d"
     ],
