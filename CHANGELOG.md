@@ -1,5 +1,12 @@
 # Scriptable Events Changelog
 
+## [1.3.0] - 12/27/2022
+- Added new event invoker script.
+
+## [1.2.3] - 12/02/2022
+- Updated namespace.
+- Cleaned up scripts.
+
 ## [1.2.2] - 07/24/2021
 - Updated assembly definition names.
 
