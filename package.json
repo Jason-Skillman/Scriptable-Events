@@ -1,7 +1,7 @@
 {
   "name": "com.jasonskillman.scriptableevents",
   "displayName": "Scriptable Events",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Allows the user to quickly setup events with scriptable objects using the observer pattern.",
   "keywords": [
 	"scriptable objects",
