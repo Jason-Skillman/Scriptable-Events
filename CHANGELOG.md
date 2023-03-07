@@ -1,5 +1,9 @@
 # Scriptable Events Changelog
 
+## [1.3.1] - 03/06/2023
+- Fixed null references bugs.
+- Split up invoker into invoker and listener scripts.
+
 ## [1.3.0] - 12/27/2022
 - Added new event invoker script.
 
