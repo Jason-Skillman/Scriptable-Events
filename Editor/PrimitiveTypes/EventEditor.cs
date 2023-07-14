@@ -1,14 +1,15 @@
 ﻿namespace JasonSkillman.ScriptableEvents.Editor {
 	using UnityEditor;
 	using UnityEngine;
-	
-	[CustomEditor(typeof(VoidEvent), true)]
-	public class VoidEventEditor : Editor {
+	using Event = JasonSkillman.ScriptableEvents.Event;
+
+	[CustomEditor(typeof(Event), true)]
+	public class EventEditor : Editor {
 		
-		private VoidEvent @event;
+		private Event @event;
 		
 		private void OnEnable() {
-			@event = target as VoidEvent;
+			@event = target as Event;
 		}
 		
 		public override void OnInspectorGUI() {

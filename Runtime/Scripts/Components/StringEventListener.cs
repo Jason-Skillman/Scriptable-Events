@@ -1,14 +1,13 @@
 ﻿namespace JasonSkillman.ScriptableEvents.Components {
 	using UnityEngine;
 	using UnityEngine.Events;
-	using Event = JasonSkillman.ScriptableEvents.Event;
 
-	public class EventListener : MonoBehaviour {
-
+	public class StringEventListener : MonoBehaviour {
+		
 		[SerializeField]
-		private Event @event;
+		private StringEvent @event;
 		[SerializeField]
-		private UnityEvent onInvoke;
+		private UnityEvent<string> onInvoke;
 
 		private void OnEnable() {
 			if(@event == null) return;
@@ -20,6 +19,6 @@
 			@event.OnInvoked -= OnInvoked;
 		}
 
-		private void OnInvoked() => onInvoke?.Invoke();
+		private void OnInvoked(string value) => onInvoke?.Invoke(value);
 	}
 }

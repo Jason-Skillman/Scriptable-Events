@@ -1,14 +1,13 @@
 ﻿namespace JasonSkillman.ScriptableEvents.Components {
 	using UnityEngine;
 	using UnityEngine.Events;
-	using Event = JasonSkillman.ScriptableEvents.Event;
 
-	public class EventListener : MonoBehaviour {
-
+	public class FloatEventListener : MonoBehaviour {
+		
 		[SerializeField]
-		private Event @event;
+		private FloatEvent @event;
 		[SerializeField]
-		private UnityEvent onInvoke;
+		private UnityEvent<float> onInvoke;
 
 		private void OnEnable() {
 			if(@event == null) return;
@@ -20,6 +19,6 @@
 			@event.OnInvoked -= OnInvoked;
 		}
 
-		private void OnInvoked() => onInvoke?.Invoke();
+		private void OnInvoked(float value) => onInvoke?.Invoke(value);
 	}
 }
