@@ -1,5 +1,9 @@
 # Scriptable Events Changelog
 
+## [1.4.0] - 07/14/2023
+- Created more event listeners.
+- Renamed VoidEvent to Event.
+
 ## [1.3.1] - 03/06/2023
 - Fixed null references bugs.
 - Split up invoker into invoker and listener scripts.

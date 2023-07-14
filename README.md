@@ -42,14 +42,14 @@ This is an example of a monobehavior script subscriping to `EventVoid`. Note: Do
 
 ```C#
 [SerializeField]
-private EventVoid voidEvent;
+private Event myEvent;
 
 private void OnEnable() {
-	voidEvent.OnInvoked += SpawnBall;
+	myEvent.OnInvoked += SpawnBall;
 }
 
 private void OnDisable() {
-	voidEvent.OnInvoked -= SpawnBall;
+	myEvent.OnInvoked -= SpawnBall;
 }
 
 private void SpawnBall() {
@@ -61,7 +61,7 @@ Drag the scriptable object event into the `EventVoid` variable in the inspector 
 
 ```C#
 [SerializeField]
-private EventVoid voidEvent;
+private Event myEvent;
 ```
 
 ![subscribing_event_inspector](Documentation~/images/subscribing_event_inspector.png)
@@ -69,16 +69,16 @@ private EventVoid voidEvent;
 ### Invoking an event
 To trigger an existing event call the `Invoke()` method from the scriptable object. Every subscribed listener will get the fired event.
 
-This is an example of a monobehavior who will trigger the `EventVoid` by calling `Invoke()` when the player enters it's trigger box.
+This is an example of a monobehavior who will trigger the `Event` by calling `Invoke()` when the player enters it's trigger box.
 
 ```C#
 [SerializeField]
-private EventVoid voidEvent;
+private Event myEvent;
 
 private void OnTriggerEnter(Collider other) {
     if(!other.CompareTag("Player")) return;
 
-    voidEvent.Invoke();
+    myEvent.Invoke();
 }
 ```
 
