@@ -1,11 +1,12 @@
 ﻿namespace JasonSkillman.ScriptableEvents.Components {
 	using UnityEngine;
 	using UnityEngine.Events;
+	using Event = JasonSkillman.ScriptableEvents.Event;
 
 	public class EventListener : MonoBehaviour {
 
 		[SerializeField]
-		private VoidEvent @event;
+		private Event @event;
 		[SerializeField]
 		private UnityEvent onInvoke;
 
