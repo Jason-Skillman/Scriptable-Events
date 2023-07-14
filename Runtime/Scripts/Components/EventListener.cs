@@ -11,7 +11,6 @@
 
 		private void OnEnable() {
 			if(@event == null) return;
-			@event.OnInvoked -= OnInvoked;
 			@event.OnInvoked += OnInvoked;
 		}
 
